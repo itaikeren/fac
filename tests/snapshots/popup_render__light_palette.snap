@@ -1,0 +1,13 @@
+---
+source: tests/popup_render.rs
+expression: out
+---
+left padding: " " fg=Rgb(39, 41, 45) bg=Rgb(238, 239, 241) bold=false italic=false
+icon: "$" fg=Rgb(106, 88, 138) bg=Rgb(238, 239, 241) bold=true italic=false
+matched: "c" fg=Rgb(39, 41, 45) bg=Rgb(247, 219, 161) bold=false italic=false
+label: "h" fg=Rgb(39, 41, 45) bg=Rgb(238, 239, 241) bold=false italic=false
+hint: "[" fg=Rgb(107, 111, 117) bg=Rgb(238, 239, 241) bold=false italic=false
+selected icon: "$" fg=Rgb(106, 88, 138) bg=Rgb(192, 211, 226) bold=true italic=false
+selected matched: "c" fg=Rgb(19, 22, 27) bg=Rgb(144, 182, 210) bold=false italic=false
+selected label: "h" fg=Rgb(19, 22, 27) bg=Rgb(192, 211, 226) bold=false italic=false
+bottom line: "A" fg=Rgb(107, 111, 117) bg=Rgb(230, 231, 233) bold=false italic=true

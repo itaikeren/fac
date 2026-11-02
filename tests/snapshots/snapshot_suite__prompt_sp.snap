@@ -1,0 +1,86 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after printf x, Enter ---
+00|% printf x
+01|x%
+02|%
+cursor: row 2, col 2
+popup: none
+--- after 'l' ---
+00|% printf x
+01|x%
+02|% l
+03| $ ls
+04| $ let
+05| $ log
+06| $ local
+07| $ limit
+08| $ logout
+cursor: row 2, col 3
+popup: rows 3..8 (6 list, bottom line 0 of 0), selected none
+--- after 's' ---
+00|% printf x
+01|x%
+02|% ls
+03| $ ls
+04| $ else
+05| $ false
+06| $ alias
+07| $ unalias
+08| ^ ls -la
+cursor: row 2, col 4
+popup: rows 3..8 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% printf x
+01|x%
+02|% ls
+03|   . file-a
+04|   . file-b
+05|   / fixture-dir/
+06|   / fixture-other/
+07|   / My Documents/
+08|   / ../
+09|   file
+cursor: row 2, col 5
+popup: rows 3..9 (6 list, bottom line 1 of 1), selected none
+--- after '-' ---
+00|% printf x
+01|x%
+02|% ls -
+03|   - -,
+04|   - -@
+05|   - -%
+06|   - -1
+07|   - -a
+08|   - -A
+09|   When the -l option is…
+cursor: row 2, col 6
+popup: rows 3..12 (6 list, bottom line 1 of 4), selected none
+--- after Down ---
+00|% printf x
+01|x%
+02|% ls -
+03|   - -,
+04|   - -@
+05|   - -%
+06|   - -1
+07|   - -a
+08|   - -A
+09|   When the -l option is
+10|   set, print file sizes
+11|   grouped and separated
+12|   by thousands using th…
+cursor: row 2, col 6
+popup: rows 3..12 (6 list, bottom line 4 of 4), selected row 3
+--- after Esc ---
+00|% printf x
+01|x%
+02|% ls -
+cursor: row 2, col 6
+popup: none

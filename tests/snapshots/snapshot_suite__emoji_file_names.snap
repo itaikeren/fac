@@ -1,0 +1,73 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after 'l' ---
+00|% l
+01| $ ls
+02| $ let
+03| $ log
+04| $ local
+05| $ limit
+06| $ logout
+cursor: row 0, col 3
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 's' ---
+00|% ls
+01| $ ls
+02| $ else
+03| $ false
+04| $ alias
+05| $ unalias
+06| ^ ls -la
+cursor: row 0, col 4
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% ls
+01|   . file-a
+02|   . file-b
+03|   / fixture-dir/
+04|   / fixture-other/
+05|   . hello❤👨👩👧👍.txt
+06|   / My Documents/
+07|   file
+cursor: row 0, col 5
+popup: rows 1..7 (6 list, bottom line 1 of 1), selected none
+--- after 'h' ---
+00|% ls h
+01|   . hello❤👨👩👧👍.txt
+02|   - -h
+03|   - -H
+04|   / fixture-other/
+05|   file
+cursor: row 0, col 6
+popup: rows 1..5 (4 list, bottom line 1 of 1), selected none
+--- after 'e' ---
+00|% ls he
+01|   . hello❤👨👩👧👍.txt
+02|   / fixture-other/
+03|   file
+cursor: row 0, col 7
+popup: rows 1..3 (2 list, bottom line 1 of 1), selected none
+--- after 'l' ---
+00|% ls hel
+01|   . hello❤👨👩👧👍.txt
+02|   file
+cursor: row 0, col 8
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected none
+--- after Down ---
+00|% ls hel
+01|   . hello❤👨👩👧👍.txt
+02|   file
+cursor: row 0, col 8
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected row 1
+--- after Tab ---
+00|% ls hello❤️👨<200d>👩<200d>👧👍🏽.txt
+01|   . hello❤👨👩👧👍.txt
+02|   file
+cursor: row 0, col 38
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected none

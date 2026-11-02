@@ -1,0 +1,68 @@
+---
+source: tests/bash.rs
+expression: "git_ch_snapshot(Profile::Apple)"
+---
+--- after 'g' ---
+00|% g
+01| $ git
+02| $ getopts
+03| $ bg
+04| $ fg
+05| $ logout
+06| $ compgen
+cursor: row 0, col 3
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 'i' ---
+00|% gi
+01| $ git
+cursor: row 0, col 4
+popup: rows 1..1 (1 list, bottom line 0 of 0), selected none
+--- after 't' ---
+00|% git
+01| $ git
+cursor: row 0, col 5
+popup: rows 1..1 (1 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% git
+01|    $ add [pathspec...]
+02|    $ apply <patch...>
+03|    $ archive <tree-ish>  [path...]
+04|    $ bisect <paths>
+05|    $ blame <file>
+06|    $ branch
+07|    Add file contents to the index
+cursor: row 0, col 6
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected none
+--- after 'c' ---
+00|% git c
+01|    $ clean <path>
+02|    $ clone <repository>  [directory]
+03|    $ commit [pathspec...]
+04|    $ config <setting>  <value>
+05|    $ checkout [branch, file, tag or commit] [pathspec...]
+06|    $ cherry-pick <commit...>
+07|    Shows which files would be removed from working direc…
+cursor: row 0, col 7
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected none
+--- after 'h' ---
+00|% git ch
+01|    $ checkout [branch, file, tag or commit] [pathspec...]
+02|    $ cherry-pick <commit...>
+03|    $ cherry
+04|    $ sparse-checkout
+05|    $ fetch [remote] [branch] [refspec]
+06|    $ branch
+07|    Switch branches or restore working tree files
+cursor: row 0, col 8
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected none
+--- after Down ---
+00|% git ch
+01|    $ checkout [branch, file, tag or commit] [pathspec...]
+02|    $ cherry-pick <commit...>
+03|    $ cherry
+04|    $ sparse-checkout
+05|    $ fetch [remote] [branch] [refspec]
+06|    $ branch
+07|    Switch branches or restore working tree files
+cursor: row 0, col 8
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected row 1

@@ -1,0 +1,27 @@
+---
+source: tests/popup_render.rs
+expression: "format!(\"{}\\n{}\", pair.snapshot(), attr_map(&pair, area))"
+---
+line 0: some earlier output
+line 1: some earlier output
+line 2: some earlier output
+line 3: some earlier output
+~/fac $ git c
+          $ checkout [branch]    
+          $ cherry-pick          
+          $ clean                
+          $ clone                
+          $ commit               
+          $ config               
+          Switch branches or re… 
+--- cursor (4, 13)
+cicmccccccccddddddddcccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbb
+........................
+........................
+--

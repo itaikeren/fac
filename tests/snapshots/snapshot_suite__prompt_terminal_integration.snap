@@ -1,0 +1,133 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after 'g' ---
+00|% g
+01| $ git
+02| $ getln
+03| $ getent
+04| $ getopts
+05| $ bg
+06| $ fg
+cursor: row 0, col 3
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 'i' ---
+00|% gi
+01| $ git
+02| ^ git commit -m first
+cursor: row 0, col 4
+popup: rows 1..2 (2 list, bottom line 0 of 0), selected none
+--- after 't' ---
+00|% git
+01| $ git
+02| ^ git commit -m first
+cursor: row 0, col 5
+popup: rows 1..2 (2 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% git
+01|    $ add [pathspec...]
+02|    $ apply <patch...>
+03|    $ archive <tree-ish>  [path...]
+04|    $ bisect <paths>
+05|    $ blame <file>
+06|    $ branch
+07|    Add file contents to the index
+cursor: row 0, col 6
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected none
+--- after 'c' ---
+00|% git c
+01|    $ clean <path>
+02|    $ clone <repository>  [directory]
+03|    $ commit [pathspec...]
+04|    $ config <setting>  <value>
+05|    $ checkout [branch, file, tag or commit] [pathspec...]
+06|    $ cherry-pick <commit...>
+07|    Shows which files would be removed from working direc…
+cursor: row 0, col 7
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected none
+--- after 'h' ---
+00|% git ch
+01|    $ checkout [branch, file, tag or commit] [pathspec...]
+02|    $ cherry-pick <commit...>
+03|    $ cherry
+04|    $ check-attr
+05|    $ check-ignore
+06|    $ check-mailmap
+07|    Switch branches or restore working tree files
+cursor: row 0, col 8
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected none
+--- after Down ---
+00|% git ch
+01|    $ checkout [branch, file, tag or commit] [pathspec...]
+02|    $ cherry-pick <commit...>
+03|    $ cherry
+04|    $ check-attr
+05|    $ check-ignore
+06|    $ check-mailmap
+07|    Switch branches or restore working tree files
+cursor: row 0, col 8
+popup: rows 1..8 (6 list, bottom line 1 of 2), selected row 1
+--- after Esc ---
+00|% git ch
+cursor: row 0, col 8
+popup: none
+--- after Ctrl-U ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after Enter (a new prompt) ---
+00|%
+01|%
+cursor: row 1, col 2
+popup: none
+--- after 'l' ---
+00|%
+01|% l
+02| $ ls
+03| $ let
+04| $ log
+05| $ local
+06| $ limit
+07| $ logout
+cursor: row 1, col 3
+popup: rows 2..7 (6 list, bottom line 0 of 0), selected none
+--- after 's' ---
+00|%
+01|% ls
+02| $ ls
+03| $ else
+04| $ false
+05| $ alias
+06| $ unalias
+07| ^ ls -la
+cursor: row 1, col 4
+popup: rows 2..7 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|%
+01|% ls
+02|   . file-a
+03|   . file-b
+04|   / fixture-dir/
+05|   / fixture-other/
+06|   / My Documents/
+07|   / ../
+08|   file
+cursor: row 1, col 5
+popup: rows 2..8 (6 list, bottom line 1 of 1), selected none
+--- after '-' ---
+00|%
+01|% ls -
+02|   - -,
+03|   - -@
+04|   - -%
+05|   - -1
+06|   - -a
+07|   - -A
+08|   When the -l option is…
+cursor: row 1, col 6
+popup: rows 2..11 (6 list, bottom line 1 of 4), selected none

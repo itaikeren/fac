@@ -1,0 +1,141 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|top line
+01|%
+cursor: row 1, col 2
+popup: none
+--- after 'l' ---
+00|top line
+01|% l
+02| $ ls
+03| $ let
+04| $ log
+05| $ local
+06| $ limit
+07| $ logout
+cursor: row 1, col 3
+popup: rows 2..7 (6 list, bottom line 0 of 0), selected none
+--- after 's' ---
+00|top line
+01|% ls
+02| $ ls
+03| $ else
+04| $ false
+05| $ alias
+06| $ unalias
+07| ^ ls -la
+cursor: row 1, col 4
+popup: rows 2..7 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|top line
+01|% ls
+02|   . file-a
+03|   . file-b
+04|   / fixture-dir/
+05|   / fixture-other/
+06|   / My Documents/
+07|   / ../
+08|   file
+cursor: row 1, col 5
+popup: rows 2..8 (6 list, bottom line 1 of 1), selected none
+--- after '-' ---
+00|top line
+01|% ls -
+02|   - -,
+03|   - -@
+04|   - -%
+05|   - -1
+06|   - -a
+07|   - -A
+08|   When the -l option is…
+cursor: row 1, col 6
+popup: rows 2..11 (6 list, bottom line 1 of 4), selected none
+--- after Down ---
+00|top line
+01|% ls -
+02|   - -,
+03|   - -@
+04|   - -%
+05|   - -1
+06|   - -a
+07|   - -A
+08|   When the -l option is
+09|   set, print file sizes
+10|   grouped and separated
+11|   by thousands using th…
+cursor: row 1, col 6
+popup: rows 2..11 (6 list, bottom line 4 of 4), selected row 2
+--- after Esc ---
+00|top line
+01|% ls -
+cursor: row 1, col 6
+popup: none
+--- after Ctrl-U ---
+00|top line
+01|%
+cursor: row 1, col 2
+popup: none
+--- after Enter (a new prompt) ---
+00|top line
+01|%
+02|top line
+03|%
+cursor: row 3, col 2
+popup: none
+--- after 'l' ---
+00|top line
+01|%
+02|top line
+03|% l
+04| $ ls
+05| $ let
+06| $ log
+07| $ local
+08| $ limit
+09| $ logout
+cursor: row 3, col 3
+popup: rows 4..9 (6 list, bottom line 0 of 0), selected none
+--- after 's' ---
+00|top line
+01|%
+02|top line
+03|% ls
+04| $ ls
+05| $ else
+06| $ false
+07| $ alias
+08| $ unalias
+09| ^ ls -la
+cursor: row 3, col 4
+popup: rows 4..9 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|top line
+01|%
+02|top line
+03|% ls
+04|   . file-a
+05|   . file-b
+06|   / fixture-dir/
+07|   / fixture-other/
+08|   / My Documents/
+09|   / ../
+10|   file
+cursor: row 3, col 5
+popup: rows 4..10 (6 list, bottom line 1 of 1), selected none
+--- after '-' ---
+00|top line
+01|%
+02|top line
+03|% ls -
+04|   - -,
+05|   - -@
+06|   - -%
+07|   - -1
+08|   - -a
+09|   - -A
+10|   When the -l option is…
+cursor: row 3, col 6
+popup: rows 4..13 (6 list, bottom line 1 of 4), selected none

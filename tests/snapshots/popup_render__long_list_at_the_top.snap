@@ -1,0 +1,23 @@
+---
+source: tests/popup_render.rs
+expression: "draw_snapshot(&many_items(), Some(0), 0, 2)"
+---
+line 0: some earlier output
+line 1: some earlier output
+~/fac $ git c
+          - item-00              
+          - item-01              
+          - item-02              
+          - item-03              
+          - item-04              
+          - item-05              
+          Item number 0          
+--- cursor (2, 13)
+SiSmmSSSSSSSSSSSSSSSSSSS
+cicmmccccccccccccccccccc
+cicmmccccccccccccccccccc
+cicmmccccccccccccccccccc
+cicmmccccccccccccccccccc
+cicmmccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbb
+--

@@ -1,0 +1,6 @@
+#compdef stuckcmd
+
+# Ignores ^C, so only a kill ends it.
+setopt local_traps
+trap '' INT
+sleep 10

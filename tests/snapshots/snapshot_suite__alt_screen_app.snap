@@ -1,0 +1,36 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after command typed ---
+00|% printf '\e[?1049h'; read -k2; printf '\e[?1049l'
+cursor: row 0, col 50
+popup: none
+--- after Enter (starts the app) ---
+00|
+cursor: row 0, col 0
+popup: none
+--- after l (typed inside the app) ---
+00|l
+cursor: row 0, col 1
+popup: none
+--- after x (ends the app) ---
+00|% printf '\e[?1049h'; read -k2; printf '\e[?1049l'
+01|%
+cursor: row 1, col 2
+popup: none
+--- after l (at the prompt again) ---
+00|% printf '\e[?1049h'; read -k2; printf '\e[?1049l'
+01|% l
+02| $ ls
+03| $ let
+04| $ log
+05| $ local
+06| $ limit
+07| $ logout
+cursor: row 1, col 3
+popup: rows 2..7 (6 list, bottom line 0 of 0), selected none

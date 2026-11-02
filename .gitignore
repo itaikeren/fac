@@ -1,0 +1,6 @@
+/target
+*.snap.new
+.DS_Store
+/.claude/
+/docs/plans/
+/CLAUDE.md

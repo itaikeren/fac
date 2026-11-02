@@ -1,0 +1,20 @@
+---
+source: tests/popup_render.rs
+expression: "format!(\"{}\\n{}\", pair.snapshot(), attr_map(&pair, frame.area))"
+---
+line 0: some earlier output
+line 1: some earlier output
+line 2: some earlier output
+~/fac $ git c
+          . 日本語.txt                                      
+          / 日本語/                                         
+          ^ echo 日本                                       
+          @ abc日本語def日本語ghi日本語jkl日本語mno日本語pq 
+          日本語の説明がここにあります                      
+--- cursor (3, 13)
+SiSm.m.S.SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+cicm.c.c.cccccccccccccccccccccccccccccccccccccccccc
+ciccccccm.c.ccccccccccccccccccccccccccccccccccccccc
+ciccccm.c.c.cccc.c.c.cccc.c.c.cccc.c.c.cccc.c.c.ccc
+bb.b.b.b.b.b.b.b.b.b.b.b.b.b.bbbbbbbbbbbbbbbbbbbbbb
+--

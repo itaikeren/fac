@@ -1,0 +1,36 @@
+---
+source: tests/popup_render.rs
+expression: "format!(\"{}\\n{}\", draw_snapshot(&items, None, 0, 2),\ndraw_snapshot(&items, Some(0), 0, 2))"
+---
+line 0: some earlier output
+line 1: some earlier output
+~/fac $ git c
+          $ rebase               
+          $ reset                
+          Reapply commits on to… 
+--- cursor (2, 13)
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbb
+........................
+........................
+........................
+--
+
+line 0: some earlier output
+line 1: some earlier output
+~/fac $ git c
+          $ rebase               
+          $ reset                
+          Reapply commits on top 
+          of another base tip.   
+          If <branch> is         
+          specified, git rebase… 
+--- cursor (2, 13)
+SiSmSSSSSSSSSSSSSSSSSSSS
+cicmcccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbb
+--

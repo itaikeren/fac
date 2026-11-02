@@ -1,0 +1,18 @@
+---
+source: tests/popup_render.rs
+expression: pair.snapshot()
+---
+
+
+
+
+
+~/fac $ some long command line that reaches far to the right c
+                                                         $ checkout [branch]    
+                                                         $ cherry-pick          
+                                                         $ clean                
+                                                         $ clone                
+                                                         $ commit               
+                                                         $ config               
+                                                         Switch branches or re… 
+--- cursor (5, 62)

@@ -1,0 +1,47 @@
+---
+source: tests/popup_render.rs
+expression: "format!(\"{}\\n{}\", pair.snapshot(), attr_map(&pair, frame.area))"
+---
+red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red green-bg z
+·green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red 
+··bold under inverse idx208 rgb 日本語漢字x   Bi plain red green-bg bold under z
+ $ checkout [branch]     Switch branches or restore working tree files  inverse 
+ $ cherry-pick                                                         rse zzzzz
+ $ clean                                                               
+ $ clone                                                                本語zzzz
+ $ commit                                                              語漢字xzz
+ $ config                                                               x   Bizz
+ Switch branches or re…                                                
+·Bi plain red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red 
+·· plain red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red z
+red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red green-bg z
+·green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red 
+··bold under inverse idx208 rgb 日本語漢字x   Bi plain red green-bg bold under z
+under inverse idx208 rgb 日本語漢字x   Bi plain red green-bg bold under inverse 
+·inverse idx208 rgb 日本語漢字x   Bi plain red green-bg bold under inverse zzzzz
+··idx208 rgb 日本語漢字x   Bi plain red green-bg bold under inverse 
+rgb 日本語漢字x   Bi plain red green-bg bold under inverse idx208 rgb 日本語zzzz
+·日本語漢字x   Bi plain red green-bg bold under inverse idx208 rgb 日本語漢字xzz
+··漢字x   Bi plain red green-bg bold under inverse idx208 rgb 日本語漢字x   Bizz
+   Bi plain red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi
+·Bi plain red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red 
+·· plain red green-bg bold under inverse idx208 rgb 日本語漢字x   Bi plain red z
+--- cursor (2, 3)
+cicmccccccccddddddddcccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbb
+.ii....................i
+......................ii
+--
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+--

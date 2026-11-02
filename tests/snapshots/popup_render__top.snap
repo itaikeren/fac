@@ -1,0 +1,23 @@
+---
+source: tests/popup_render.rs
+expression: "draw_snapshot(&git_items(), None, 0, 0)"
+---
+~/fac $ git c
+          $ checkout [branch]    
+          $ cherry-pick          
+          $ clean                
+          $ clone                
+          $ commit               
+          $ config               
+          Switch branches or re… 
+--- cursor (0, 13)
+cicmccccccccddddddddcccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+cicmcccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbb
+........................
+........................
+--

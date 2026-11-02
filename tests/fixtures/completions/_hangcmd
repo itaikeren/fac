@@ -1,0 +1,4 @@
+#compdef hangcmd
+
+# Hangs until ^C.
+sleep 10

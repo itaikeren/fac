@@ -1,0 +1,19 @@
+#compdef faccmd
+
+# A deterministic command for the snapshot suite: fixed subcommands, and
+# fixed values after `config`.
+local -a subcommands
+subcommands=(
+  'build:Build the project'
+  'bench:Run the benchmarks'
+  'check:Check the project without building'
+  'clean:Remove the build output'
+  'config:Show or change the configuration'
+  'deploy:Deploy the latest build'
+)
+
+if [[ $words[CURRENT-1] == config ]]; then
+  compadd alpha beta gamma
+elif (( CURRENT == 2 )); then
+  _describe -t commands 'faccmd command' subcommands
+fi

@@ -1,0 +1,16 @@
+{
+  "name": "fac-live-driver",
+  "displayName": "fac live driver",
+  "description": "Opens a fac test terminal and types into it from a command file. For tools/live only.",
+  "version": "0.0.1",
+  "publisher": "fac-local",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}

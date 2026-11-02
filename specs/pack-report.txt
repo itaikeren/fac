@@ -1,0 +1,58 @@
+fac-pack-specs report
+
+Source modules (.js files in the build dir): 1486
+  spec without functions: 1158
+  spec with functions:    306
+  versioned:              6
+  version file:           10
+  skipped:                6
+    aws/regions.js: the default export is an array, not a spec
+    deno/config_schema.d.js: no default export
+    deno/deno_doc.d.js: no default export
+    deno/generators.js: no default export
+    dynamic/index.js: a table of import() loaders for every spec, not a spec
+    index.js: the package's list of spec names, not a spec
+
+Overrides: 12
+  aider.js adds aider
+  amp.js adds amp
+  claude.js adds claude
+  codex.js adds codex
+  cursor-agent.js adds cursor-agent
+  fac.js adds fac
+  gemini.js adds gemini
+  git.js replaces git
+  goose.js adds goose
+  kiro-cli.js adds kiro-cli
+  llm.js adds llm
+  opencode.js adds opencode
+
+Unknown fields (dropped): 9
+  subcommands.0: 1, e.g. hasura.js: subcommands.5.subcommands.4.0
+    hasura spreads an array of subcommands into one object; Fig sees a nameless subcommand
+  subcommands.1: 1, e.g. hasura.js: subcommands.5.subcommands.4.1
+    hasura spreads an array of subcommands into one object; Fig sees a nameless subcommand
+  subcommands.2: 1, e.g. hasura.js: subcommands.5.subcommands.4.2
+    hasura spreads an array of subcommands into one object; Fig sees a nameless subcommand
+  subcommands.3: 1, e.g. hasura.js: subcommands.5.subcommands.4.3
+    hasura spreads an array of subcommands into one object; Fig sees a nameless subcommand
+  subcommands.4: 1, e.g. hasura.js: subcommands.5.subcommands.4.4
+    hasura spreads an array of subcommands into one object; Fig sees a nameless subcommand
+  subcommands.5: 1, e.g. hasura.js: subcommands.5.subcommands.4.5
+    hasura spreads an array of subcommands into one object; Fig sees a nameless subcommand
+  subcommands.prority: 1, e.g. fisher.js: subcommands.0.subcommands.2.prority
+    fisher misspells priority; Fig ignores the key too
+  suggestions.args: 12, e.g. netlify.js: subcommands.42.args.suggestions.0.args
+    netlify gives suggestions subcommand fields, which a suggestion lacks; Fig ignores them
+  suggestions.options: 42, e.g. netlify.js: subcommands.42.args.suggestions.0.options
+    netlify gives suggestions subcommand fields, which a suggestion lacks; Fig ignores them
+Values of another type (converted): 1
+  default (number -> string): 9, e.g. ionic.js: subcommands.9.options.2.args.default
+    ionic gives some arg defaults as numbers; kept as the text JS shows
+Suggestion types outside Fig's list (kept as written): 1
+  argument: 28
+
+Entries: 1491
+Size of fig.zst: 8848425 bytes
+  entry frames: 6693816 bytes (74556135 bytes of postcard)
+  js frames:    2154609 bytes (317 modules, 12082867 bytes of source)

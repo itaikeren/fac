@@ -1,0 +1,64 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after 'c' ---
+00|% c
+01| $ cd
+02| $ case
+03| $ chdir
+04| $ coproc
+05| $ command
+06| $ continue
+cursor: row 0, col 3
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 'd' ---
+00|% cd
+01| $ cd
+02| $ chdir
+03| $ command
+04| $ which-command
+05| $ faccmd
+06| $ sched
+cursor: row 0, col 4
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% cd
+01|   / fixture-dir/
+02|   / fixture-other/
+03|   / My Documents/
+04|   / ../
+05|   folder
+cursor: row 0, col 5
+popup: rows 1..5 (4 list, bottom line 1 of 1), selected none
+--- after '\'' ---
+00|% cd '
+01|   / fixture-dir/
+02|   / fixture-other/
+03|   / My Documents/
+04|   / ../
+05|   folder
+cursor: row 0, col 6
+popup: rows 1..5 (4 list, bottom line 1 of 1), selected none
+--- after 'M' ---
+00|% cd 'M
+01|   / My Documents/
+02|   folder
+cursor: row 0, col 7
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected none
+--- after 'y' ---
+00|% cd 'My
+01|   / My Documents/
+02|   folder
+cursor: row 0, col 8
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected none
+--- after Tab ---
+00|% cd 'My Documents/
+01|   / ../
+02|   folder
+cursor: row 0, col 19
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected none

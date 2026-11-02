@@ -1,0 +1,4 @@
+PS1='% '
+PS2='> '
+unset HISTFILE
+FAC_FIXTURE_BASH_PROFILE=r

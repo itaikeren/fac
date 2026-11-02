@@ -1,0 +1,83 @@
+name: release
+
+# Builds fac for Apple Silicon and Intel Macs when a tag like v0.1.0 is pushed,
+# and uploads the archives to a GitHub Release of the same name.
+# The Homebrew formula is written afterwards by tools/release/formula.sh.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build ${{ matrix.target }}
+    runs-on: macos-26   # Apple Silicon; the Intel build is cross-compiled here
+    strategy:
+      fail-fast: true
+      matrix:
+        target: [aarch64-apple-darwin, x86_64-apple-darwin]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Check the tag matches Cargo.toml
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          version=$(awk -F'"' '/^\[package\]/ { p = 1; next } /^\[/ { p = 0 } p && /^version[[:space:]]*=/ { print $2; exit }' Cargo.toml)
+          if [ "$TAG" != "v$version" ]; then
+            echo "tag $TAG does not match Cargo.toml version $version" >&2
+            exit 1
+          fi
+
+      - name: Install Rust stable
+        run: |
+          rustup toolchain install stable --profile minimal --target "${{ matrix.target }}"
+          rustup default stable
+          rustc --version
+          # Cargo.toml's rust-version must be met by stable; cargo build checks it too.
+
+      - name: Package
+        run: tools/release/package.sh "${{ matrix.target }}"
+
+      - name: Smoke test (Apple Silicon)
+        if: matrix.target == 'aarch64-apple-darwin'
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          dir=$(mktemp -d)
+          tar -xzf "target/release-test/fac-${TAG#v}-${{ matrix.target }}.tar.gz" -C "$dir"
+          out=$("$dir/fac" --version)
+          echo "$out"
+          [ "$out" = "fac ${TAG#v}" ]
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: fac-${{ matrix.target }}
+          path: |
+            target/release-test/*.tar.gz
+            target/release-test/*.tar.gz.sha256
+          if-no-files-found: error
+
+  release:
+    name: publish the release
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          ls -l dist
+          gh release create "$TAG" --title "$TAG" --generate-notes --verify-tag
+          gh release upload "$TAG" dist/*.tar.gz dist/*.tar.gz.sha256

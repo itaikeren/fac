@@ -1,0 +1,274 @@
+{
+ "backgrounds": [
+  "#1e1f23",
+  "#0b0c0e",
+  "#002b36",
+  "#fbfbf9"
+ ],
+ "cases": [
+  {
+   "theme": "default",
+   "background": "#1e1f23",
+   "ansi": {
+    "blue": "#61afef",
+    "magenta": "#c678dd",
+    "green": "#98c379",
+    "yellow": "#e5c07b",
+    "cyan": "#56b6c2"
+   },
+   "roles": {
+    "card": "#282a2e",
+    "band": "#222528",
+    "text": "#ced1d6",
+    "dim": "#7d8086",
+    "band_text": "#7d8086",
+    "selected": "#3a556c",
+    "selected_text": "#f3f5f9",
+    "selected_dim": "#b2bdc8",
+    "matched": "#57380f",
+    "selected_matched": "#477398",
+    "icons": {
+     "subcommand": "#a496bf",
+     "option": "#84b198",
+     "arg": "#61afef",
+     "folder": "#c9ad7e",
+     "file": "#7d8086",
+     "history": "#7d9faa",
+     "special": "#c9ad7e"
+    },
+    "dark": true
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#1e1f23",
+   "ansi": {
+    "blue": null,
+    "magenta": "#c678dd",
+    "green": "#98c379",
+    "yellow": "#e5c07b",
+    "cyan": "#56b6c2"
+   },
+   "roles": {
+    "card": "#282a2e",
+    "band": "#222528",
+    "text": "#ced1d6",
+    "dim": "#7d8086",
+    "band_text": "#7d8086",
+    "selected": "#3b4b67",
+    "selected_text": "#f3f5f9",
+    "selected_dim": "#b3bac6",
+    "matched": "#57380f",
+    "selected_matched": "#496290",
+    "icons": {
+     "subcommand": "#a496bf",
+     "option": "#84b198",
+     "arg": "#6490e0",
+     "folder": "#c9ad7e",
+     "file": "#7d8086",
+     "history": "#7d9faa",
+     "special": "#c9ad7e"
+    },
+    "dark": true
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#0b0c0e",
+   "ansi": {
+    "blue": "#61afef",
+    "magenta": "#c678dd",
+    "green": "#98c379",
+    "yellow": "#e5c07b",
+    "cyan": "#56b6c2"
+   },
+   "roles": {
+    "card": "#151618",
+    "band": "#101113",
+    "text": "#ced1d6",
+    "dim": "#7d8086",
+    "band_text": "#7d8086",
+    "selected": "#2d475d",
+    "selected_text": "#f3f5f9",
+    "selected_dim": "#aeb8c2",
+    "matched": "#3d2300",
+    "selected_matched": "#3f6a8e",
+    "icons": {
+     "subcommand": "#a496bf",
+     "option": "#84b198",
+     "arg": "#61afef",
+     "folder": "#c9ad7e",
+     "file": "#7d8086",
+     "history": "#7d9faa",
+     "special": "#c9ad7e"
+    },
+    "dark": true
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#0b0c0e",
+   "ansi": {
+    "blue": null,
+    "magenta": "#c678dd",
+    "green": "#98c379",
+    "yellow": "#e5c07b",
+    "cyan": "#56b6c2"
+   },
+   "roles": {
+    "card": "#151618",
+    "band": "#101113",
+    "text": "#ced1d6",
+    "dim": "#7d8086",
+    "band_text": "#7d8086",
+    "selected": "#293752",
+    "selected_text": "#f3f5f9",
+    "selected_dim": "#acb3bf",
+    "matched": "#3d2300",
+    "selected_matched": "#384f7c",
+    "icons": {
+     "subcommand": "#a496bf",
+     "option": "#84b198",
+     "arg": "#547ecd",
+     "folder": "#c9ad7e",
+     "file": "#7d8086",
+     "history": "#7d9faa",
+     "special": "#c9ad7e"
+    },
+    "dark": true
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#002b36",
+   "ansi": {
+    "blue": "#268bd2",
+    "magenta": "#d33682",
+    "green": "#859900",
+    "yellow": "#b58900",
+    "cyan": "#2aa198"
+   },
+   "roles": {
+    "card": "#1f353b",
+    "band": "#192f35",
+    "text": "#ccd2d5",
+    "dim": "#7a8284",
+    "band_text": "#7a8284",
+    "selected": "#295772",
+    "selected_text": "#f3f5f9",
+    "selected_dim": "#acbeca",
+    "matched": "#5f4017",
+    "selected_matched": "#31709a",
+    "icons": {
+     "subcommand": "#a496bf",
+     "option": "#84b198",
+     "arg": "#3fa0e8",
+     "folder": "#c9ad7e",
+     "file": "#7a8284",
+     "history": "#7d9faa",
+     "special": "#c9ad7e"
+    },
+    "dark": true
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#002b36",
+   "ansi": {
+    "blue": null,
+    "magenta": "#d33682",
+    "green": "#859900",
+    "yellow": "#b58900",
+    "cyan": "#2aa198"
+   },
+   "roles": {
+    "card": "#1f353b",
+    "band": "#192f35",
+    "text": "#ccd2d5",
+    "dim": "#7a8284",
+    "band_text": "#7a8284",
+    "selected": "#385573",
+    "selected_text": "#f3f5f9",
+    "selected_dim": "#b2bdca",
+    "matched": "#5f4017",
+    "selected_matched": "#4a6c9b",
+    "icons": {
+     "subcommand": "#a496bf",
+     "option": "#84b198",
+     "arg": "#6d99ea",
+     "folder": "#c9ad7e",
+     "file": "#7a8284",
+     "history": "#7d9faa",
+     "special": "#c9ad7e"
+    },
+    "dark": true
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#fbfbf9",
+   "ansi": {
+    "blue": "#4078f2",
+    "magenta": "#a626a4",
+    "green": "#50a14f",
+    "yellow": "#c18401",
+    "cyan": "#0184bc"
+   },
+   "roles": {
+    "card": "#eeeff1",
+    "band": "#e6e7e9",
+    "text": "#27292d",
+    "dim": "#6b6f75",
+    "band_text": "#6b6f75",
+    "selected": "#c4d1ed",
+    "selected_text": "#13161b",
+    "selected_dim": "#515765",
+    "matched": "#f7dba1",
+    "selected_matched": "#99b1e8",
+    "icons": {
+     "subcommand": "#6a588a",
+     "option": "#42755b",
+     "arg": "#3065de",
+     "folder": "#936c3d",
+     "file": "#6b6f75",
+     "history": "#416a77",
+     "special": "#936c3d"
+    },
+    "dark": false
+   }
+  },
+  {
+   "theme": "default",
+   "background": "#fbfbf9",
+   "ansi": {
+    "blue": null,
+    "magenta": "#a626a4",
+    "green": "#50a14f",
+    "yellow": "#c18401",
+    "cyan": "#0184bc"
+   },
+   "roles": {
+    "card": "#eeeff1",
+    "band": "#e6e7e9",
+    "text": "#27292d",
+    "dim": "#6b6f75",
+    "band_text": "#6b6f75",
+    "selected": "#c7d2e7",
+    "selected_text": "#13161b",
+    "selected_dim": "#525862",
+    "matched": "#f7dba1",
+    "selected_matched": "#9db3dd",
+    "icons": {
+     "subcommand": "#6a588a",
+     "option": "#42755b",
+     "arg": "#3b6ac5",
+     "folder": "#936c3d",
+     "file": "#6b6f75",
+     "history": "#416a77",
+     "special": "#936c3d"
+    },
+    "dark": false
+   }
+  }
+ ]
+}

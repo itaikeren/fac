@@ -1,0 +1,139 @@
+#!/bin/zsh -f
+# A fake bash for fac's trigger tests (phase 4, step 0b): named bash so fac
+# takes it for one, it speaks the trigger hook's side of the protocol with
+# no line editor behind it. It records every byte it reads, in order, in
+# $HOME/fake-shell.log, so a test sees exactly what reached the shell.
+#
+# It announces the trigger (`ESC [9999~`), the apply trigger (`ESC
+# [9998~`), $FAC_TEST_DEFER and `armed`, then draws `% ` between 133;A and
+# 133;B. Printable bytes are its line (echoed), DEL takes one off, the
+# trigger sends a 7790 report (the line in bytes), the apply trigger reads
+# an apply from fd 63, and Enter runs the line: 133;C, `ran:<line>`, 133;D,
+# the next prompt. Other escape sequences are read whole and ignored. Each
+# message carries the session token from FAC_TOKEN, as the hooks' do.
+# At each prompt, as bash's hook does, it reads what fac wrote on fd 63
+# and, after a `ta`, asks fac to look at its input (`look`), waits for the
+# answer (`looked <seq> <mark> <bytes>`) and sends it back as `unread
+# <mark>,<bytes>`. FAC_TEST_SILENT: it never
+# reports. FAC_TEST_CWD: it works in $HOME and says so (OSC 7 and the
+# `cwd` key) at each prompt.
+if [[ $1 == --version ]]; then
+  print 'GNU bash, version 5.3.9(1)-release (aarch64-apple-darwin25.0.0)'
+  exit 0
+fi
+emulate -R zsh
+setopt no_multibyte
+zmodload zsh/system
+zmodload zsh/zselect
+stty raw -echo 2>/dev/null
+exec {log}>>$HOME/fake-shell.log
+integer seq=0 report_seq=0 marked=0
+line=
+token=${FAC_TOKEN-}
+unset FAC_TOKEN
+
+send() { print -rn -- "$1" }
+context() { send $'\e]7791;1:'"$token;$(( ++seq ));$1;$2"$'\a' }
+encode() {
+  local s=${1//\%/%25} c
+  s=${s//;/%3B}
+  for c in ${(s::)s}; do
+    [[ $c == [$'\x01'-$'\x1f\x7f'] ]] && s=${s//$c/%${(l:2::0:)$(( [##16] #c ))}}
+  done
+  REPLY=$s
+}
+report() {
+  [[ -n ${FAC_TEST_SILENT-} ]] && return
+  encode $line
+  report_seq=$(( ++seq ))
+  # The cursor in chars, as fac reads it.
+  local chars=$( setopt multibyte; print -rn -- ${#line} )
+  send $'\e]7790;1:'"$token;$report_seq;start;$chars;;;$REPLY"$'\a'
+}
+prompt() {
+  if [[ -n ${FAC_TEST_CWD-} ]]; then
+    send $'\e]7;file://h'"$HOME"$'\a'
+    encode $HOME
+    context cwd $REPLY
+  fi
+  local cmd
+  while zselect -t 0 -r 63 && read -r -u 63 cmd; do
+    [[ $cmd == ta ]] && marked=1
+  done
+  if (( marked )); then
+    marked=0
+    context look ''
+    local look=$seq
+    while read -r -t 1 -u 63 cmd; do
+      if [[ $cmd == "looked $look "<->' '<-> ]]; then
+        local -a w=("${(@s: :)cmd}")
+        context unread $w[3],$w[4]
+        (( w[4] == 0 )) || marked=1
+        break
+      fi
+    done
+  fi
+  context armed $$
+  send $'\e]133;A\a% \e]133;B\a'
+}
+apply() {
+  local cmd
+  # A `ta` before the apply is taken as at a prompt.
+  while read -r -t 1 -u 63 cmd && [[ $cmd == ta ]]; do
+    marked=1
+  done
+  if [[ $cmd == apply\ * ]]; then
+    local -a w=("${(@s: :)cmd}")
+    if (( $#w == 5 )) && [[ $w[1] == apply && $w[2] == $report_seq ]]; then
+      local l r expected
+      printf -v l '%b' "${w[3]//\%/\\x}"
+      printf -v r '%b' "${w[4]//\%/\\x}"
+      printf -v expected '%b' "${w[5]//\%/\\x}"
+      if [[ $expected == $line ]]; then
+        line=$l$r
+        send $'\r\e[K% '"$line"
+      fi
+    fi
+  fi
+  report
+}
+
+[[ -n ${FAC_TEST_CWD-} ]] && cd $HOME
+context trigger '%1B[9999~'
+context apply_trigger '%1B[9998~'
+context defer "${FAC_TEST_DEFER-}"
+prompt
+esc=
+while sysread -s 1 -i 0 c; do
+  print -rn -u $log -- "$c"
+  if [[ -n $esc ]]; then
+    esc+=$c
+    # ESC [ ... up to its final byte, ESC O with one byte, or ESC with one.
+    [[ $esc == $'\e[' || $esc == $'\eO' ]] && continue
+    [[ $esc == $'\e['* && $c != [$'\x40'-$'\x7e'] ]] && continue
+    case $esc in
+      ($'\e[9999~') report ;;
+      ($'\e[9998~') apply ;;
+    esac
+    esc=
+    continue
+  fi
+  case $c in
+    ($'\e') esc=$c ;;
+    ($'\r')
+      send $'\r\n\e]133;C\a'"ran:$line"$'\r\n\e]133;D;0\a'
+      line=
+      prompt
+      ;;
+    ($'\x7f')
+      if [[ -n $line ]]; then
+        line=${line[1,-2]}
+        send $'\b \b'
+      fi
+      ;;
+    ([$'\x20'-$'\x7e'] | [$'\x80'-$'\xff'])
+      line+=$c
+      send "$c"
+      ;;
+  esac
+done

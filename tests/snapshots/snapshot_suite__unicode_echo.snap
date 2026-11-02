@@ -1,0 +1,70 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after 'e' ---
+00|% e
+01| $ end
+02| $ exit
+03| $ eval
+04| $ exec
+05| $ echo
+06| $ else
+cursor: row 0, col 3
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 'c' ---
+00|% ec
+01| $ echo
+02| $ echotc
+03| $ echoti
+04| $ exec
+05| $ esac
+06| $ select
+cursor: row 0, col 4
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 'h' ---
+00|% ech
+01| $ echo
+02| $ echotc
+03| $ echoti
+04| $ foreach
+05| ^ echo ${FAC_ACTIVE:-none}
+06| ^ echo ✅ done
+cursor: row 0, col 5
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 'o' ---
+00|% echo
+01| $ echo
+02| $ echotc
+03| $ echoti
+04| ^ echo ${FAC_ACTIVE:-none}
+05| ^ echo ✅ done
+cursor: row 0, col 6
+popup: rows 1..5 (5 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% echo
+01|     @ $FAC_ACTIVE
+02|     @ $FAC_CMD_FD
+03|     @ $FAC_LOG
+04|     @ $FAC_LOG_FILE
+05|     @ $HOME
+06|     @ $LANG
+07|     Environment Variable
+cursor: row 0, col 7
+popup: rows 1..7 (6 list, bottom line 1 of 1), selected none
+--- after '✅' ---
+00|% echo ✅
+01|     ^ echo ✅ done
+02|     string
+cursor: row 0, col 9
+popup: rows 1..2 (1 list, bottom line 1 of 1), selected none
+--- after Enter ---
+00|% echo ✅
+01|✅
+02|%
+cursor: row 2, col 2
+popup: none

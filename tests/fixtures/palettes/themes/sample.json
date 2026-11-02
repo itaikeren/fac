@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "fac tests"
+  },
+  "version": "1.0",
+  "theme": {
+    "backgroundColor": "rgb(52,55,70)",
+    "textColor": "rgb(248,248,242)",
+    "matchBackgroundColor": "rgb(93,83,124)",
+    "selection": {
+      "textColor": "rgb(248,248,242)",
+      "backgroundColor": "rgb(79,83,112)",
+      "matchBackgroundColor": "rgb(129,112,174)"
+    },
+    "description": {
+      "textColor": "rgb(189,147,249)",
+      "borderColor": "rgb(40,42,54)"
+    }
+  }
+}

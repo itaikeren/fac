@@ -1,0 +1,89 @@
+---
+source: tests/snapshot_suite.rs
+expression: out
+---
+--- start ---
+00|%
+cursor: row 0, col 2
+popup: none
+--- after 'l' ---
+00|% l
+01| $ ls
+02| $ let
+03| $ log
+04| $ local
+05| $ limit
+06| $ logout
+cursor: row 0, col 3
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after 's' ---
+00|% ls
+01| $ ls
+02| $ else
+03| $ false
+04| $ alias
+05| $ unalias
+06| ^ ls -la
+cursor: row 0, col 4
+popup: rows 1..6 (6 list, bottom line 0 of 0), selected none
+--- after space ---
+00|% ls
+01|   . file-a
+02|   . file-b
+03|   / fixture-dir/
+04|   / fixture-other/
+05|   / My Documents/
+06|   / ../
+07|   file
+cursor: row 0, col 5
+popup: rows 1..7 (6 list, bottom line 1 of 1), selected none
+--- after '-' ---
+00|% ls -
+01|   - -,
+02|   - -@
+03|   - -%
+04|   - -1
+05|   - -a
+06|   - -A
+07|   When the -l option is…
+cursor: row 0, col 6
+popup: rows 1..10 (6 list, bottom line 1 of 4), selected none
+--- after Down ---
+00|% ls -
+01|   - -,
+02|   - -@
+03|   - -%
+04|   - -1
+05|   - -a
+06|   - -A
+07|   When the -l option is
+08|   set, print file sizes
+09|   grouped and separated
+10|   by thousands using th…
+cursor: row 0, col 6
+popup: rows 1..10 (6 list, bottom line 4 of 4), selected row 1
+--- after Down ---
+00|% ls -
+01|   - -,
+02|   - -@
+03|   - -%
+04|   - -1
+05|   - -a
+06|   - -A
+07|   Display extended
+08|   attribute keys and
+09|   sizes in long (-l)
+10|   output
+cursor: row 0, col 6
+popup: rows 1..10 (6 list, bottom line 4 of 4), selected row 2
+--- after Tab ---
+00|% ls -@
+01|   - -@
+02|   - -@,
+03|   - -@%
+04|   - -@1
+05|   - -@a
+06|   - -@A
+07|   Display extended attr…
+cursor: row 0, col 7
+popup: rows 1..10 (6 list, bottom line 1 of 4), selected none

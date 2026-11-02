@@ -1,0 +1,8 @@
+{
+  "claude": [
+    {
+      "option": "--model",
+      "set": {"args": {"name": "model", "suggestions": ["fable", "opus", "sonnet"]}}
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+---
+source: tests/fish.rs
+expression: "git_ch_down(Profile::Apple)"
+---
+--- after git ch ---
+00|% git ch
+01|    $ checkout [branch, file, tag or commit] [pathspec...]
+02|    $ cherry-pick <commit...>
+03|    $ cherry
+04|    $ sparse-checkout
+05|    $ fetch [remote] [branch] [refspec]
+06|    $ branch
+07|    Switch branches or restore working tree files
+cursor: row 0, col 8
+popup: rows 1..7 (6 list, bottom line 1 of 1), selected none
+--- after Down ---
+00|% git ch
+01|    $ checkout [branch, file, tag or commit] [pathspec...]
+02|    $ cherry-pick <commit...>
+03|    $ cherry
+04|    $ sparse-checkout
+05|    $ fetch [remote] [branch] [refspec]
+06|    $ branch
+07|    Switch branches or restore working tree files
+cursor: row 0, col 8
+popup: rows 1..7 (6 list, bottom line 1 of 1), selected row 1

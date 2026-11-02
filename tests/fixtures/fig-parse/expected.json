@@ -1,0 +1,4548 @@
+{
+ "parser": "aws/amazon-q-developer-cli v1.10.1",
+ "specs": "@withfig/autocomplete 2.692.3",
+ "cases": [
+  {
+   "line": "git ",
+   "arg": "alias",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "add"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "apply"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "archive"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "bisect"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "blame"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "branch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "checkout"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "cherry-pick"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clean"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clone"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "commit"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "config"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "daemon"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "diff"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "fetch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "grep"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "init"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "log"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "ls-remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "merge"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mergetool"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mv"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "pull"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "push"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rebase"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reflog"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reset"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "restore"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "revert"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rm"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "show"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stage"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stash"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "status"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "submodule"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "switch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "tag"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "worktree"
+     ]
+    },
+    {
+     "type": null,
+     "names": [
+      "commit -m 'msg'"
+     ],
+     "insertValue": "commit -m '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "--bare"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--exec-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--git-dir"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--html-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--info-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--man-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--namespace"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-optional-locks"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-pager"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-replace-objects"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--version"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--work-tree"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ],
+     "insertValue": "-c {cursor}"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--paginate"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "git checkout -b ",
+   "arg": "New Branch",
+   "search": "",
+   "suggestions": []
+  },
+  {
+   "line": "git checkout -b -",
+   "arg": "New Branch",
+   "search": "-",
+   "suggestions": []
+  },
+  {
+   "line": "git -C dir sta",
+   "arg": "alias",
+   "search": "sta",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "add"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "apply"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "archive"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "bisect"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "blame"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "branch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "checkout"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "cherry-pick"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clean"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clone"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "commit"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "config"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "daemon"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "diff"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "fetch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "grep"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "init"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "log"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "ls-remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "merge"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mergetool"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mv"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "pull"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "push"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rebase"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reflog"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reset"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "restore"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "revert"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rm"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "show"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stage"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stash"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "status"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "submodule"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "switch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "tag"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "worktree"
+     ]
+    },
+    {
+     "type": null,
+     "names": [
+      "commit -m 'msg'"
+     ],
+     "insertValue": "commit -m '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "--bare"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--exec-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--git-dir"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--html-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--info-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--man-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--namespace"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-optional-locks"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-pager"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-replace-objects"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--version"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--work-tree"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ],
+     "insertValue": "-c {cursor}"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--paginate"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "git commit -m \"msg\" --am",
+   "arg": "pathspec",
+   "search": "--am",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--allow-empty"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--allow-empty-message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--amend"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--author"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--branch"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cleanup"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--date"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--dry-run"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--fixup"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--long"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-edit"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-gpg-sign"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-post-rewrite"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-signoff"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-status"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pathspec-file-nul"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pathspec-from-file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--porcelain"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--reset-author"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--short"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--squash"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--status"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-a",
+      "--all"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-am"
+     ],
+     "insertValue": "-am '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c",
+      "--reedit-message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C",
+      "--reuse-message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-e",
+      "--edit"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-F",
+      "--file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-i",
+      "--include"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-n",
+      "--no-verify"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-o",
+      "--only"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--patch"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-q",
+      "--quiet"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-s",
+      "--signoff"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-S",
+      "--gpg-sign"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-t",
+      "--template"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-u",
+      "--untracked-files"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v",
+      "--verbose"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-z",
+      "--null"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "git commit --amend --am",
+   "arg": "pathspec",
+   "search": "--am",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--allow-empty"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--allow-empty-message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--author"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--branch"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cleanup"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--date"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--dry-run"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--fixup"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--long"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-edit"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-gpg-sign"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-post-rewrite"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-signoff"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-status"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pathspec-file-nul"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pathspec-from-file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--porcelain"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--reset-author"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--short"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--squash"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--status"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-a",
+      "--all"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-am"
+     ],
+     "insertValue": "-am '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c",
+      "--reedit-message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C",
+      "--reuse-message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-e",
+      "--edit"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-F",
+      "--file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-i",
+      "--include"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-m",
+      "--message"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-n",
+      "--no-verify"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-o",
+      "--only"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--patch"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-q",
+      "--quiet"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-s",
+      "--signoff"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-S",
+      "--gpg-sign"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-t",
+      "--template"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-u",
+      "--untracked-files"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v",
+      "--verbose"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-z",
+      "--null"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "git log --format=",
+   "arg": "since",
+   "search": "--format=",
+   "suggestions": [
+    {
+     "type": "arg",
+     "names": [
+      "HEAD"
+     ]
+    },
+    {
+     "type": "arg",
+     "names": [
+      "HEAD~<N>"
+     ],
+     "insertValue": "HEAD~"
+    },
+    {
+     "type": "option",
+     "names": [
+      "--author"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--follow"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--grep"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--oneline"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--show-signature"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--source"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--stat"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "-u",
+      "--patch"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-q",
+      "--quiet"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "git push --force-with-lease=ma",
+   "arg": "refname[:expect]",
+   "search": "ma",
+   "suggestions": []
+  },
+  {
+   "line": "git foo ",
+   "error": "Error"
+  },
+  {
+   "line": "ls -la ",
+   "arg": "",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--color"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-,"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-@"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-%"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-1"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-A"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-b"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-B"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-d"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-e"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-f"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-F"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-g"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-G"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-h"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-H"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-i"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-k"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-L"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-m"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-n"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-o"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-O"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-P"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-q"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-r"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-R"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-s"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-S"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-t"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-T"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-u"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-U"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-w"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-W"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-x"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "ls -la",
+   "arg": null,
+   "search": "-la",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--color"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-la,"
+     ],
+     "insertValue": "-la,"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-la@"
+     ],
+     "insertValue": "-la@"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-la%"
+     ],
+     "insertValue": "-la%"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-la1"
+     ],
+     "insertValue": "-la1"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-la"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laA"
+     ],
+     "insertValue": "-laA"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lab"
+     ],
+     "insertValue": "-lab"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laB"
+     ],
+     "insertValue": "-laB"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lac"
+     ],
+     "insertValue": "-lac"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laC"
+     ],
+     "insertValue": "-laC"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lad"
+     ],
+     "insertValue": "-lad"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lae"
+     ],
+     "insertValue": "-lae"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laf"
+     ],
+     "insertValue": "-laf"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laF"
+     ],
+     "insertValue": "-laF"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lag"
+     ],
+     "insertValue": "-lag"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laG"
+     ],
+     "insertValue": "-laG"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lah"
+     ],
+     "insertValue": "-lah"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laH"
+     ],
+     "insertValue": "-laH"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lai"
+     ],
+     "insertValue": "-lai"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lak"
+     ],
+     "insertValue": "-lak"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laL"
+     ],
+     "insertValue": "-laL"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lam"
+     ],
+     "insertValue": "-lam"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lan"
+     ],
+     "insertValue": "-lan"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lao"
+     ],
+     "insertValue": "-lao"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laO"
+     ],
+     "insertValue": "-laO"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lap"
+     ],
+     "insertValue": "-lap"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laP"
+     ],
+     "insertValue": "-laP"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laq"
+     ],
+     "insertValue": "-laq"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lar"
+     ],
+     "insertValue": "-lar"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laR"
+     ],
+     "insertValue": "-laR"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-las"
+     ],
+     "insertValue": "-las"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laS"
+     ],
+     "insertValue": "-laS"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lat"
+     ],
+     "insertValue": "-lat"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laT"
+     ],
+     "insertValue": "-laT"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lau"
+     ],
+     "insertValue": "-lau"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laU"
+     ],
+     "insertValue": "-laU"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lav"
+     ],
+     "insertValue": "-lav"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-law"
+     ],
+     "insertValue": "-law"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-laW"
+     ],
+     "insertValue": "-laW"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-lax"
+     ],
+     "insertValue": "-lax"
+    }
+   ]
+  },
+  {
+   "line": "ls -",
+   "arg": "",
+   "search": "-",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--color"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-,"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-@"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-%"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-1"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-a"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-A"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-b"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-B"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-d"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-e"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-f"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-F"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-g"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-G"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-h"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-H"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-i"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-k"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-l"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-L"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-m"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-n"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-o"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-O"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-P"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-q"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-r"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-R"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-s"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-S"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-t"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-T"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-u"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-U"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-w"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-W"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-x"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "tar -xzf ",
+   "error": "AmazonQ.UpdateStateError"
+  },
+  {
+   "line": "tar -xzf",
+   "arg": null,
+   "search": "-xzf",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "--delete"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "--show-defaults"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "--test-label"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "--usage"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "--version"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "?",
+      "-?",
+      "--help"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "A",
+      "-A",
+      "--catenate",
+      "--concatenate"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "c",
+      "-c",
+      "--create"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "d",
+      "-d",
+      "--diff",
+      "--compare"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "r",
+      "-r",
+      "--append"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "t",
+      "-t",
+      "--list"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "u",
+      "-u",
+      "--update"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "x",
+      "-x",
+      "--extract",
+      "--get"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--acls"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--backup"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--hole-detection"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ignore-command-error"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--index-file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--newer-mtime"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-acls"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-ignore-command-error"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-null"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-quote-chars"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-recursion"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-selinux"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-unquote"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-verbatim-files-from"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-xattrs"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--numeric-owner"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--quote-chars"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--quoting-style"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--recursion"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--selinux"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--show-transformed-names",
+      "--show-stored-names"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--sparse-version"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--suffix"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--totals"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--unquote"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--verbatim-files-from"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--xattrs"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--xattrs-exclude"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--xattrs-include"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-null"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "C",
+      "-C",
+      "--directory"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "g",
+      "-g",
+      "--listed-incremental"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "G",
+      "-G",
+      "--incremental"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "R",
+      "-R",
+      "--block-number"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "S",
+      "-S",
+      "--sparse"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "T",
+      "-T",
+      "--files-from"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "v",
+      "-v",
+      "--verbose"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "w",
+      "-w",
+      "--interactive",
+      "--confirmation"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "X",
+      "-X",
+      "--exclude-from"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "tar --force-local ",
+   "error": "AmazonQ.UpdateStateError"
+  },
+  {
+   "line": "docker run --rm -it ",
+   "arg": "image",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--add-host"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--blkio-weight"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--blkio-weight-device"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cap-add"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cap-drop"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cgroup-parent"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cgroupns"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cidfile"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpu-period"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpu-quota"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpu-rt-period"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpu-rt-runtime"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpus"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpuset-cpus"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--cpuset-mems"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--detach-keys"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--device"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--device-cgroup-rule"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--device-read-bps"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--device-read-iops"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--device-write-bps"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--device-write-iops"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--disable-content-trust"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--dns"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--dns-option"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--dns-search"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--domainname"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--entrypoint"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--env-file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--expose"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--gpus"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--group-add"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--health-cmd"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--health-interval"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--health-retries"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--health-start-period"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--health-timeout"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--init"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ip"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ip6"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ipc"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--isolation"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--kernel-memory"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--label-file"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--link"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--link-local-ip"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--log-driver"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--log-opt"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--mac-address"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--memory-reservation"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--memory-swap"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--memory-swappiness"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--mount"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--name"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--network"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--network-alias"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-healthcheck"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--oom-kill-disable"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--oom-score-adj"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pid"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pids-limit"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--platform"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--privileged"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--pull"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--read-only"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--restart"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--runtime"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--security-opt"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--shm-size"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--sig-proxy"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--stop-signal"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--stop-timeout"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--storage-opt"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--sysctl"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--tmpfs"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ulimit"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--userns"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--uts"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--volume-driver"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--volumes-from"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-a",
+      "--attach"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c",
+      "--cpu-shares"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-d",
+      "--detach"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-e",
+      "--env"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-h",
+      "--hostname"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-it"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-l",
+      "--label"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-m",
+      "--memory"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--publish"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-P",
+      "--publish-all"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-u",
+      "--user"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v",
+      "--volume"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-w",
+      "--workdir"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "npm run ",
+   "arg": "script",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--if-present"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ignore-scripts"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--script-shell"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--silent"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-w",
+      "--workspace"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-ws",
+      "--workspaces"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "sudo git ch",
+   "arg": "alias",
+   "search": "ch",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "add"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "apply"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "archive"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "bisect"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "blame"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "branch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "checkout"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "cherry-pick"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clean"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clone"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "commit"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "config"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "daemon"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "diff"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "fetch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "grep"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "init"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "log"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "ls-remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "merge"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mergetool"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mv"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "pull"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "push"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rebase"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reflog"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reset"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "restore"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "revert"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rm"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "show"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stage"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stash"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "status"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "submodule"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "switch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "tag"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "worktree"
+     ]
+    },
+    {
+     "type": null,
+     "names": [
+      "commit -m 'msg'"
+     ],
+     "insertValue": "commit -m '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "--bare"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--exec-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--git-dir"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--html-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--info-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--man-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--namespace"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-optional-locks"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-pager"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-replace-objects"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--version"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--work-tree"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ],
+     "insertValue": "-c {cursor}"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--paginate"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "sudo -u root git ch",
+   "arg": "alias",
+   "search": "ch",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "add"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "apply"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "archive"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "bisect"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "blame"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "branch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "checkout"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "cherry-pick"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clean"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clone"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "commit"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "config"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "daemon"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "diff"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "fetch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "grep"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "init"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "log"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "ls-remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "merge"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mergetool"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mv"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "pull"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "push"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rebase"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reflog"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reset"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "restore"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "revert"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rm"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "show"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stage"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stash"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "status"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "submodule"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "switch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "tag"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "worktree"
+     ]
+    },
+    {
+     "type": null,
+     "names": [
+      "commit -m 'msg'"
+     ],
+     "insertValue": "commit -m '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "--bare"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--exec-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--git-dir"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--html-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--info-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--man-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--namespace"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-optional-locks"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-pager"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-replace-objects"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--version"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--work-tree"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ],
+     "insertValue": "-c {cursor}"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--paginate"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "time git ",
+   "arg": "alias",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "add"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "apply"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "archive"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "bisect"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "blame"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "branch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "checkout"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "cherry-pick"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clean"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "clone"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "commit"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "config"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "daemon"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "diff"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "fetch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "grep"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "init"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "log"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "ls-remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "merge"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mergetool"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "mv"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "pull"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "push"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rebase"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reflog"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "remote"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "reset"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "restore"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "revert"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "rm"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "show"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stage"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "stash"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "status"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "submodule"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "switch"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "tag"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "worktree"
+     ]
+    },
+    {
+     "type": null,
+     "names": [
+      "commit -m 'msg'"
+     ],
+     "insertValue": "commit -m '{cursor}'"
+    },
+    {
+     "type": "option",
+     "names": [
+      "--bare"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--exec-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--git-dir"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--html-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--info-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--man-path"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--namespace"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-optional-locks"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-pager"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-replace-objects"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--version"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--work-tree"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-c"
+     ],
+     "insertValue": "-c {cursor}"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-C"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-p",
+      "--paginate"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "kubectl get pods -n ",
+   "arg": null,
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--allow-missing-template-keys"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--chunk-size"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--field-selector"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--ignore-not-found"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-headers"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--output-watch-events"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--raw"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--server-print"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--show-kind"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--show-labels"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--sort-by"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--template"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--watch-only"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-A",
+      "--all-namespaces"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-f",
+      "--filename"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-k",
+      "--kustomize"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-l",
+      "--selector"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-L",
+      "--label-columns"
+     ],
+     "insertValue": "--label-columns"
+    },
+    {
+     "type": "option",
+     "names": [
+      "-o",
+      "--output"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-R",
+      "--recursive"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-w",
+      "--watch"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "aws s3 ls ",
+   "arg": "paths",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "--human-readable"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--page-size"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--recursive"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--request-payer"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--summarize"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "rm a b ",
+   "arg": "",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "-d"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-f"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-i"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-P"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-r",
+      "-R"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "rm -- -x",
+   "arg": "",
+   "search": "-x",
+   "suggestions": []
+  },
+  {
+   "line": "rm -- -x ",
+   "arg": "",
+   "search": "",
+   "suggestions": []
+  },
+  {
+   "line": "chown -H ",
+   "arg": "owner[:group] or :group",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "option",
+     "names": [
+      "-f"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-h"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-n"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "-R"
+     ],
+     "priority": 75
+    },
+    {
+     "type": "option",
+     "names": [
+      "-v"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "who -q ",
+   "arg": "file",
+   "search": "",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "am"
+     ],
+     "priority": 40
+    }
+   ]
+  },
+  {
+   "line": "fold file ",
+   "arg": "file",
+   "search": "",
+   "suggestions": []
+  },
+  {
+   "line": "yalc ",
+   "arg": null,
+   "search": "",
+   "suggestions": [
+    {
+     "type": "subcommand",
+     "names": [
+      "add"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "check"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "dir"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "installations"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "link"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "publish"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "push"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "remove"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "restore"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "retreat"
+     ]
+    },
+    {
+     "type": "subcommand",
+     "names": [
+      "update"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--help"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--no-colors"
+     ]
+    },
+    {
+     "type": "option",
+     "names": [
+      "--quiet"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "cd a b ",
+   "error": "AmazonQ.UpdateStateError"
+  },
+  {
+   "line": "cat - ",
+   "error": "TypeError"
+  }
+ ]
+}
