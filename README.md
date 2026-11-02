@@ -1,8 +1,6 @@
 <h1 align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.svg">
-    <img src="docs/images/logo-light.svg" alt="fac" height="72">
-  </picture>
+  <img src="docs/images/logo-light.svg#gh-light-mode-only" alt="fac" height="72">
+  <img src="docs/images/logo-dark.svg#gh-dark-mode-only" alt="fac" height="72">
 </h1>
 
 <p align="center"><strong>Fast autocomplete for the macOS terminal.</strong></p>
