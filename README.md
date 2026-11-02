@@ -1,4 +1,9 @@
-<h1 align="center">fac</h1>
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.svg">
+    <img src="docs/images/logo-light.svg" alt="fac" height="72">
+  </picture>
+</h1>
 
 <p align="center"><strong>Fast autocomplete for the macOS terminal.</strong></p>
 
